@@ -12,6 +12,8 @@ and its dependencies provide users with a full implementation of BSTs.
 #include <random>
 #include "BinarySearchTree.h"	// BST ADT
 
+using namespace std;
+
 /* index and parameter are used for traversing and performing
 operations with the data in the BST. */
 int index = 1, parameter = 0;

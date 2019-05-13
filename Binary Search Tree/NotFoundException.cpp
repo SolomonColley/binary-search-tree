@@ -14,7 +14,7 @@ something (e.g. a node that does not exist).
 // Constructor Section.
 // -------------------------------------------------------------------------------------
 
-NotFoundException::NotFoundException(const string& message)
-	: logic_error("Not Found Exception: " + message)
+NotFoundException::NotFoundException(const std::string& message)
+	: std::logic_error("Not Found Exception: " + message)
 {
 }  // end parameterized constructor

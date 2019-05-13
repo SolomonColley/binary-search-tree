@@ -14,6 +14,7 @@ std::logic_error pretaining to a violation of a precondition
 // Constructor Section.
 // -------------------------------------------------------------------------------------
 
-PreconditionException::PreconditionException(const string& message) : logic_error("Precondition Exception: " + message)
+PreconditionException::PreconditionException(const std::string& message)
+	: std::logic_error("Precondition Exception: " + message)
 {
 }  // end parameterized constructor

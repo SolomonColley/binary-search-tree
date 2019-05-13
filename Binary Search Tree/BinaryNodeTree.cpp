@@ -20,7 +20,7 @@ int BinaryNodeTree<ItemType>::getHeightHelper(BinaryNode<ItemType>* subTreePtr) 
 	if (subTreePtr == nullptr)
 		return 0;
 	else
-		return 1 + max(getHeightHelper(subTreePtr->getLeftChildPtr()),
+		return 1 + std::max(getHeightHelper(subTreePtr->getLeftChildPtr()),
 			getHeightHelper(subTreePtr->getRightChildPtr())); // end if-else
 } // end getHeightHelper
 

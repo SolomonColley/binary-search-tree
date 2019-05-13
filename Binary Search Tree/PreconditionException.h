@@ -13,14 +13,12 @@ std::logic_error pretaining to a violation of a precondition
 #include <stdexcept>
 #include <string>
 
-using namespace std;
-
-class PreconditionException : public logic_error
+class PreconditionException : public std::logic_error
 {
 public:
 	// -------------------------------------------------------------------------------------
 	// Constructor Section.
 	// -------------------------------------------------------------------------------------
 
-	PreconditionException(const string& message = "");
+	PreconditionException(const std::string& message = "");
 }; // end PrecondViolatedExcep 

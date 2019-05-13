@@ -13,14 +13,12 @@ something (e.g. a node that does not exist).
 #include <stdexcept>
 #include <string>
 
-using namespace std;
-
-class NotFoundException : public logic_error
+class NotFoundException : public std::logic_error
 {
 public:
 	// -------------------------------------------------------------------------------------
 	// Constructor Section.
 	// -------------------------------------------------------------------------------------
 
-	NotFoundException(const string& message = "");
+	NotFoundException(const std::string& message = "");
 }; // end NotFoundException 
